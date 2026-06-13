@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Christin Negou
 
-## Getting Started
+Site portfolio one-pager pour présenter mes projets et services en tant que développeur freelance à Trois-Rivières, Québec.
 
-First, run the development server:
+## Aperçu
+
+**Live** : [christinnegou.ca](https://christinnegou.ca) · [portfolio-nu-mocha-98.vercel.app](https://portfolio-nu-mocha-98.vercel.app)
+
+5 sections :
+- **Hero** — accroche et appels à l'action
+- **Projets** — cartes avec liens live et GitHub pour chaque projet vitrine
+- **Services** — Sites web, Applications web, Applications mobiles
+- **À propos** — parcours, UQTR, stack technique
+- **Contact** — formulaire d'envoi d'email via Resend
+
+## Stack technique
+
+| Couche | Technologie |
+|--------|-------------|
+| Framework | Next.js 16 (App Router) |
+| Styling | Tailwind CSS v4 |
+| Langage | TypeScript 5 |
+| Email | Resend |
+| Déploiement | Vercel |
+| Domaine | christinnegou.ca |
+
+## Installation
 
 ```bash
+git clone https://github.com/ChristinNegou/portfolio.git
+cd portfolio
+npm install
+
+# Configurer les variables d'environnement
+cp .env.local.example .env.local
+# Remplir RESEND_API_KEY avec ta clé depuis resend.com
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variables d'environnement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+# Resend — https://resend.com (gratuit jusqu'à 100 emails/jour)
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── api/contact/route.ts   → Route handler formulaire de contact
+│   ├── globals.css            → Tailwind v4 + thème custom
+│   ├── layout.tsx             → Métadonnées, police Geist
+│   └── page.tsx               → Page principale
+└── components/
+    ├── Navbar.tsx             → Navigation sticky responsive
+    ├── Footer.tsx             → Pied de page
+    └── sections/
+        ├── Hero.tsx
+        ├── Projects.tsx
+        ├── Services.tsx
+        ├── About.tsx
+        └── Contact.tsx
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Développeur
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Christin Negou** — Développeur web & mobile, Québec  
+[github.com/ChristinNegou](https://github.com/ChristinNegou) · [christinnegou.ca](https://christinnegou.ca) · 2026

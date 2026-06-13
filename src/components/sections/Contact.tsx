@@ -50,8 +50,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-slate-400 text-sm">Email</p>
-                  <a href="mailto:jordydeangelis@gmail.com" className="text-white font-medium hover:text-primary-light transition-colors">
-                    jordydeangelis@gmail.com
+                  <a href="mailto:christiannegou@yahoo.com" className="text-white font-medium hover:text-primary-light transition-colors">
+                    christiannegou@yahoo.com
                   </a>
                 </div>
               </div>
@@ -78,8 +78,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-slate-400 text-sm">LinkedIn</p>
-                  <a href="https://linkedin.com/in/christinnegou" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:text-primary-light transition-colors">
-                    linkedin.com/in/christinnegou
+                  <a href="https://linkedin.com/in/noel-christian-negou-397005394" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:text-primary-light transition-colors">
+                    linkedin.com/in/christin-Negou
                   </a>
                 </div>
               </div>
